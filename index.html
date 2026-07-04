@@ -3,76 +3,344 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ideealuce | În mentenanță</title>
-    <style>
-      :root {
-        --bone: #f7f3eb;
-        --filament: #1f2937;
-        --gold: #c8a96b;
-      }
-
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--bone);
-        color: var(--filament);
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-        padding: 24px;
-      }
-
-      .card {
-        max-width: 560px;
-        padding: 32px;
-        border: 1px solid rgba(31, 41, 55, 0.08);
-        background: rgba(255, 255, 255, 0.82);
-        text-align: center;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-      }
-
-      .badge {
-        display: inline-block;
-        margin-bottom: 12px;
-        padding: 6px 12px;
-        border-radius: 999px;
-        background: rgba(200, 169, 107, 0.15);
-        color: var(--gold);
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0 0 12px;
-        font-size: 2rem;
-        color: var(--filament);
-      }
-
-      p {
-        margin: 0 0 16px;
-        line-height: 1.6;
-        color: #4b5563;
-      }
-
-      a {
-        color: var(--gold);
-        font-weight: 700;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <title>Ideealuce | Iluminat Premium</title>
+    <meta
+      name="description"
+      content="Ideealuce by Braco SRL oferă soluții premium de iluminat, produse LED și consultanță tehnică pentru proiecte rezidențiale, comerciale și industriale."
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="card">
-      <div class="badge">În mentenanță</div>
-      <h1>Ideealuce</h1>
-      <p>Site-ul nostru este momentan în mentenanță și va reveni curând cu noul conținut.</p>
-      <p>Vă mulțumim pentru înțelegere.</p>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span class="topbar-item">📍 Str. Dimitrie Leonida nr. 111, Piatra Neamț</span>
+        <span class="topbar-item">🕒 Deschis zilnic până la 18:00</span>
+        <a class="topbar-item" href="tel:0233226178">📞 0233 226 178</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#hero" class="brand">
+          <strong>IDEEA<span>LUCE</span></strong>
+          <small>by Braco SRL</small>
+        </a>
+
+        <button class="menu-toggle" aria-label="Deschide meniu">☰</button>
+
+        <nav class="nav-links" aria-label="Navigare principală">
+          <a href="#hero">Acasă</a>
+          <a href="#produse">Produse</a>
+          <a href="#b2b">Soluții B2B</a>
+          <a href="#despre">Despre Noi</a>
+          <a href="#recenzii">Recenzii</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="tel:0233226178">Sună acum</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-content">
+          <div class="badge">★ 4.8/5 — peste 169 recenzii</div>
+          <h1>
+            Lumina care <span>transformă</span><br />
+            spațiile
+          </h1>
+          <p>
+            Corpuri de iluminat premium, soluții LED inovatoare și materiale electrice de calitate superioară,
+            pentru proiecte rezidențiale, comerciale și industriale.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#produse">Explorează produsele</a>
+            <a class="button button-outline" href="#b2b">Soluții pentru afaceri</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-grid">
+          <div class="trust-card">
+            <div class="icon">★</div>
+            <strong>4.8/5</strong>
+            <span>Rating Google</span>
+          </div>
+          <div class="trust-card">
+            <div class="icon">👥</div>
+            <strong>15+ ani</strong>
+            <span>Experiență în iluminat</span>
+          </div>
+          <div class="trust-card">
+            <div class="icon">🚚</div>
+            <strong>Livrare rapidă</strong>
+            <span>Stoc disponibil</span>
+          </div>
+          <div class="trust-card">
+            <div class="icon">🛡️</div>
+            <strong>Garanție completă</strong>
+            <span>Produse premium</span>
+          </div>
+          <div class="trust-card">
+            <div class="icon">💡</div>
+            <strong>Consultanță gratuită</strong>
+            <span>Personalizată</span>
+          </div>
+          <div class="trust-card">
+            <div class="icon">⚡</div>
+            <strong>Eficiență energetică</strong>
+            <span>LED & Smart</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="despre">
+        <div class="container about-grid">
+          <div class="about-card">
+            <div class="section-heading">
+              <p>Despre noi</p>
+              <h2>Experiență, pasiune și dedicare</h2>
+              <p class="text">
+                Ideealuce by Braco SRL este partenerul dvs. de încredere pentru crearea ambianței perfecte.
+                Cu sediul în Piatra Neamț, oferim produse premium și soluții personalizate pentru fiecare proiect.
+              </p>
+            </div>
+            <ul class="about-list">
+              <li><span class="dot">•</span> Oferim cea mai completă gamă de corpuri de iluminat și soluții LED.</li>
+              <li><span class="dot">•</span> Consultanță tehnică personalizată pentru clienți rezidențiali și B2B.</li>
+              <li><span class="dot">•</span> Prețuri competitive și produse testate pentru durabilitate și performanță.</li>
+            </ul>
+          </div>
+
+          <div class="about-points">
+            <div class="point">
+              <h3>Calitate premium</h3>
+              <p>Lucrăm exclusiv cu branduri consacrate și produse verificate.</p>
+            </div>
+            <div class="point">
+              <h3>Echipă de specialiști</h3>
+              <p>Personalul nostru oferă sprijin tehnic și recomandări personalizate.</p>
+            </div>
+            <div class="point">
+              <h3>Inovație continuă</h3>
+              <p>Adoptăm cele mai noi tehnologii LED și soluții Smart Home.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="produse">
+        <div class="container">
+          <div class="section-heading">
+            <p>Colecția noastră</p>
+            <h2>Produse și categorii</h2>
+            <p class="text">Alege categoria potrivită pentru proiectul tău și vezi ce găsești în showroomul nostru.</p>
+          </div>
+
+          <div class="product-grid">
+            <article class="products-card">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="Lustre elegante" />
+              <div class="body">
+                <h3>Lustre & Pendule</h3>
+                <p>Designuri moderne și clasice pentru fiecare tip de interior.</p>
+              </div>
+            </article>
+            <article class="products-card">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Spoturi LED" />
+              <div class="body">
+                <h3>Spoturi & Benzi LED</h3>
+                <p>Iluminare funcțională și decorativă, cu eficiență energetică ridicată.</p>
+              </div>
+            </article>
+            <article class="products-card">
+              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Iluminat exterior" />
+              <div class="body">
+                <h3>Iluminat Exterior</h3>
+                <p>Solutii rezistente pentru curți, terase și spații publice.</p>
+              </div>
+            </article>
+            <article class="products-card">
+              <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80" alt="Prize și întrerupătoare" />
+              <div class="body">
+                <h3>Prize & Întrerupătoare</h3>
+                <p>Accesorii și soluții electrice pentru instalații complete.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="b2b">
+        <div class="container b2b-wrap">
+          <div class="b2b-card">
+            <div class="section-heading">
+              <p>Soluții profesionale</p>
+              <h2>Partenerul tău pentru proiecte</h2>
+              <p class="text">
+                Oferim soluții complete de iluminat profesional pentru companii, antreprenori și dezvoltatori imobiliari.
+              </p>
+            </div>
+            <ul>
+              <li>Prețuri dedicate pentru parteneri și volume mari</li>
+              <li>Consultanță tehnică pe întregul proiect</li>
+              <li>Livrare rapidă din stocurile disponibile</li>
+              <li>Soluții eficiente energetic certificate</li>
+            </ul>
+          </div>
+
+          <div class="b2b-card">
+            <h3>Solicită o ofertă</h3>
+            <form>
+              <div class="form-grid">
+                <input type="text" placeholder="Nume complet" />
+                <input type="text" placeholder="Companie (opțional)" />
+                <input type="email" placeholder="Email" />
+                <input type="tel" placeholder="Telefon" />
+                <select class="full">
+                  <option>Tip proiect</option>
+                  <option>Comercial</option>
+                  <option>Industrial</option>
+                  <option>Rezidențial</option>
+                </select>
+                <textarea class="full" placeholder="Descrieți pe scurt proiectul dvs..."></textarea>
+                <button class="button button-primary full" type="submit">Trimite cererea</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="recenzii">
+        <div class="container">
+          <div class="section-heading">
+            <p>Recenzii clienți</p>
+            <h2>Ce spun clienții noștri</h2>
+            <p class="text">Experiențele reale ale celor care au ales Ideealuce pentru proiectele lor.</p>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="reviews-card">
+              <div class="stars">★★★★★</div>
+              <p>“Cel mai bun magazin de iluminat din Piatra Neamț! Am găsit exact lustra pe care o căutam.”</p>
+              <strong>Alexandru M.</strong>
+              <span>Rezidențial</span>
+            </article>
+            <article class="reviews-card">
+              <div class="stars">★★★★★</div>
+              <p>“Am amenajat un întreg apartament cu produse de la Ideealuce. Profesionalism și calitate excelentă.”</p>
+              <strong>Elena P.</strong>
+              <span>Rezidențial</span>
+            </article>
+            <article class="reviews-card">
+              <div class="stars">★★★★★</div>
+              <p>“Colaborăm de mulți ani pentru proiecte comerciale. Stocuri disponibile și suport tehnic profesionist.”</p>
+              <strong>SC ProBuild SRL</strong>
+              <span>Comercial</span>
+            </article>
+            <article class="reviews-card">
+              <div class="stars">★★★★★</div>
+              <p>“Am instalat iluminat LED în toată casa și diferența este vizibilă în ambianță și factură.”</p>
+              <strong>Mihai D.</strong>
+              <span>Rezidențial</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container contact-wrap">
+          <div class="contact-card">
+            <div class="section-heading">
+              <p>Vizitează-ne</p>
+              <h2>Te așteptăm la showroom</h2>
+              <p class="text">Vino să vezi produsele și să discutăm soluțiile potrivite pentru proiectul tău.</p>
+            </div>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="icon">📍</div>
+                <div>
+                  <strong>Adresă</strong><br />
+                  Str. Dimitrie Leonida nr. 111, Piatra Neamț, România
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">📞</div>
+                <div>
+                  <strong>Telefon</strong><br />
+                  <a href="tel:0233226178">0233 226 178</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">🕒</div>
+                <div>
+                  <strong>Program</strong><br />
+                  Deschis zilnic · Închidere la 18:00
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">🌐</div>
+                <div>
+                  <strong>Website</strong><br />
+                  <a href="https://www.ideealuce.ro">www.ideealuce.ro</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <iframe
+              title="Locația Ideealuce"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2721.2!2d26.3666!3d46.9266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sStr.+Dimitrie+Leonida+111%2C+Piatra+Neam%C8%9B!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
+              width="100%"
+              height="360"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>IDEEA<span style="color: var(--gold);">LUCE</span></h3>
+            <p>Lider regional în iluminat premium, soluții LED și materiale electrice profesionale din județul Neamț.</p>
+          </div>
+          <div>
+            <h3>Produse</h3>
+            <p><a href="#produse">Lustre & Pendule</a></p>
+            <p><a href="#produse">Spoturi & Benzi LED</a></p>
+            <p><a href="#produse">Iluminat Exterior</a></p>
+          </div>
+          <div>
+            <h3>Servicii</h3>
+            <p><a href="#b2b">Consultanță Tehnică</a></p>
+            <p><a href="#b2b">Proiecte B2B</a></p>
+            <p><a href="#b2b">Soluții Comerciale</a></p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p><a href="tel:0233226178">0233 226 178</a></p>
+            <p><a href="mailto:office@ideealuce.ro">office@ideealuce.ro</a></p>
+            <p><a href="https://www.ideealuce.ro">www.ideealuce.ro</a></p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Ideealuce by Braco SRL. Toate drepturile rezervate.</span>
+          <span>Proiectat pentru prezentare și publicație web statică.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
